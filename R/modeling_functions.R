@@ -25,6 +25,7 @@ source("R/utilities.R")
 #' @param data Data frame with Trust and P_ID columns
 #' @param outcome_var Name of outcome variable (default: "Trust")
 #' @return Fitted lme model object
+
 fit_null_model <- function(data, outcome_var = "Trust") {
   
   formula_str <- paste(outcome_var, "~ 1")
